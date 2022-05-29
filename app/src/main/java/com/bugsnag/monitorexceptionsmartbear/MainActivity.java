@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
          Configuration config  = Configuration.load(this);
          config.setEnabledReleaseStages(new HashSet<String>() {{
-            add("development");
+            add("production");
         }});
          Bugsnag.start(this, config);
 
